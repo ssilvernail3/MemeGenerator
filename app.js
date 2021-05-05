@@ -16,7 +16,7 @@ form.addEventListener('submit', function (event) {
     newDiv.classList.add('new');
     // newDiv.style.position = 'relative';
     document.querySelector('#container').appendChild(newDiv);
-    
+
     const image = document.createElement('img');
     image.src = urlInput.value;
     image.classList.add('img');
@@ -29,20 +29,22 @@ form.addEventListener('submit', function (event) {
     document.querySelector('.new').appendChild(topDiv);
 
     const btmDiv = document.createElement('div');
-   btmDiv.innerText = btmText.value;
+    btmDiv.innerText = btmText.value;
     // btmDiv.style.position = 'absolute', 'bottom';
     btmDiv.classList.add('btm');
     document.querySelector('.new').appendChild(btmDiv);
 
-    
+
 
     const deleteMeme = document.querySelector('img');
     deleteMeme.addEventListener('click', function (event) {
         if (event.target.tagName === 'IMG') {
-            event.target.parentElement.remove(); 
+            event.target.parentElement.remove();
         }
 
     })
-    
-    form.reset(); 
+
+
 });
+
+form.reset();
