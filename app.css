@@ -1,0 +1,15 @@
+#container {
+    position: relative;
+}
+
+.top{
+    position: absolute;
+    top: 100px;
+    color: white;
+}
+
+.btm {
+    position: absolute; 
+    bottom: 100px;
+    color: white;
+}
